@@ -1,12 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅: ${actual} === ${expected}`);
-  } else {
-    console.log(`❌❌❌: ${actual} !== ${expected}`);
-  }
-
-
-};
+const assertEqual = require('./assertEqual');
 
 //assertEqual("Lighthouse Labs", "Bootcamp");
 //assertEqual(1, 1);
@@ -20,6 +12,5 @@ const head = function(arr) {
 
 }
 
-console.log(head([1,3,5,]))
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+module.exports = head
+//console.log(head([1,3,5,]))
