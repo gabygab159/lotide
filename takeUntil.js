@@ -2,15 +2,14 @@ const takeUntil = function(array, callback) {
   const newArray = [];
   for (let item of array) {
     //console.log(item)
-    if (callback(item)) {
+    if(callback(item)){
       return newArray;
     } else {
       newArray.push(item);
-    }
-
+    }    
   }
   return newArray;
-};
+}
 
 
 
@@ -22,7 +21,7 @@ const takeUntil = function(array, callback) {
 //       newArray.push(item);
 //     } else {
 //       return newArray;
-//     }
+//     }    
 
 //   }
 //   return newArray;

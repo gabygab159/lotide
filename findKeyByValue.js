@@ -12,19 +12,19 @@ const findKeyByValue = function(tvShowObject, show) {
   const genreKey = Object.keys(tvShowObject);
   //console.log(genreKey)
   //console.log(Object.entries(tvShowObject))
-  for (let key of genreKey) {
-    if (tvShowObject[key] === show) {
-      console.log(key);
-      return key;
-    }
-  }
+  for(let key of genreKey){
+    if(tvShowObject[key] === show) {
+      console.log(key)
+      return key;      
+    } 
+  }  
   
 };
 
 
 
 
-const bestTVShowsByGenre = {
+const bestTVShowsByGenre = { 
   sci_fi: "The Expanse",
   comedy: "Brooklyn Nine-Nine",
   drama:  "The Wire"

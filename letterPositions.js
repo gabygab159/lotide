@@ -17,7 +17,7 @@ const assertArraysEqual = function(arr1, arr2) {
 
 
 const letterPositions = function(sentence){
-  const array = sentence.split('')
+  const array = sentence.split("")
   console.log(array);
   const results = {};
 
@@ -30,5 +30,5 @@ const letterPositions = function(sentence){
   }
   return results
 }
-//console.log(letterPositions("Lighthouse Labs"));
+console.log(letterPositions("Lighthouse Labs"));
 //console.log(letterPositions("hello").e, [1]);
